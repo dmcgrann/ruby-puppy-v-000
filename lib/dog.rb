@@ -7,4 +7,13 @@ class Dog
      @@all << self
    end
 
+   def self.clear_all
+     @@ll.clear
+   end
+
+   def self.all?
+     self.each do |dog|
+       puts dog
+     end
+   end
  end
